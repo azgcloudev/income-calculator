@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Income Calculator</title>
+
+<!--    STYLES-->
+    <link href="assets/css/global.css" rel="stylesheet">
+    <link href="assets/css/utilities.css" rel="stylesheet">
+    <link href="assets/css/calculator.css" rel="stylesheet">
+</head>
+<body>
+<!--choose currency-->
+<!--input income-->
+<!--display:
+    1. 75 - spend
+    2. 15 - invest
+    3. 10 - save
+-->
+<div id="calculator">
+    <div class="input-box">
+        <input id="input-income">
+    </div>
+    <div class="select-currency flex">
+        <label for="currency-select">Seleccione el tipo de moneda:</label>
+        <select name="currency" id="currency-select">
+            <option value="" selected>--> Seleccione una opción <--</option>
+            <option value="$">$ - Dolar</option>
+            <option value="₡">₡ - Colones</option>
+        </select>
+    </div>
+    <div class="display-information">
+        <div class="display-item" id="display75"></div>
+        <div class="display-item" id="display15"></div>
+        <div class="display-item" id="display10"></div>
+    </div>
+    <button id="calculate-btn">Calcular</button>
+</div>
+<script src="js/incomeCalculator.js"></script>
+<script src="js/calculatorInterface.js"></script>
+</body>
+</html>
